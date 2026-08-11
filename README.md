@@ -16,6 +16,9 @@ Organizations moving goods across global, often difficult-to-reach destinations 
 
 The interactive Tableau dashboard includes four visuals, each chosen deliberately for what it needed to show:
 
+🔗 [View the live dashboard on Tableau Public](https://public.tableau.com/views/NanaAbabio/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+📊 [Dashboard notes & chart explanations](dashboard/READ.md)
+
 1. **Freight Cost by Shipment Mode** (bar chart) — average cost per shipment across Air, Air Charter, Ocean, and Truck
 2. **Delivery Delay by Shipment Mode** (diverging bar chart) — average days early/late per mode, colored red (late) / green (early), with a reference line at zero ("On Time")
 3. **Delivery Delay by Country** (map) — every country sized by shipment volume and colored by average delay, making outlier destinations visible at a glance
@@ -82,6 +85,10 @@ This analysis gives a supply chain team a starting checklist rather than just a 
 - Extend the vendor pricing comparison beyond the ARV group to other product categories
 - Add a cost-to-serve view combining freight, delay risk, and vendor pricing into a single per-country or per-vendor risk score
 
+## Tools & Technologies
+
+Excel (pivot tables, calculated fields) · Tableau Public (interactive dashboard) · SQL / SQLite (query-based analysis recreating the Excel findings) · GitHub (version control & documentation)
+
 ## Skills Demonstrated
 
 - Data cleaning and data quality investigation (encoding issues, missing values, non-numeric entries in numeric fields)
@@ -90,6 +97,7 @@ This analysis gives a supply chain team a starting checklist rather than just a 
 - Interactive dashboard design in Tableau (geographic mapping, diverging bar charts, box plots, calculated fields, filters)
 - Deliberate chart-type selection based on the analytical question, not default formatting
 - Translating raw data findings into specific, actionable business recommendations
+- Writing SQL queries (CTEs, CASE statements, date parsing, aggregate functions) to recreate and validate Excel pivot table findings in SQLite
 
 ## Conclusion
 
@@ -102,4 +110,3 @@ Graduate student building a data analytics portfolio.
 
 ---
 
-🔗 **[View the live interactive dashboard on Tableau Public](https://public.tableau.com/views/NanaAbabio/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
